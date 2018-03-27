@@ -1,10 +1,3 @@
-//
-//  ConnectionFile.swift
-//  ConnectionModule
-//
-//  Created by SYS005 on 3/29/17.
-//  Copyright © 2017 SYS005. All rights reserved.
-//
 
 import Foundation
 import UIKit

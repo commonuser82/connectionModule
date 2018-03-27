@@ -1,10 +1,3 @@
-//
-//  JsonEncodedViewController.swift
-//  ConnectionModule
-//
-//  Created by SYS005 on 12/26/17.
-//  Copyright © 2017 SYS005. All rights reserved.
-//
 
 import UIKit
 

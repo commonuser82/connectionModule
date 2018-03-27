@@ -1,10 +1,3 @@
-//
-//  WebServiceHelper.swift
-//  PsychScribe
-//
-//  Created by Ashish Kakkad on 7/27/16.
-//  Copyright © 2015 MoveoApps. All rights reserved.
-//
 
 import UIKit
 import SystemConfiguration
