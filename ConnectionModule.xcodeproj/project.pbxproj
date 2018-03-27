@@ -14,6 +14,10 @@
 		C118587A1E8BB56F006B034E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11858781E8BB56F006B034E /* LaunchScreen.storyboard */; };
 		C11858851E8BB56F006B034E /* ConnectionModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11858841E8BB56F006B034E /* ConnectionModuleTests.swift */; };
 		C11858901E8BB56F006B034E /* ConnectionModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C118588F1E8BB56F006B034E /* ConnectionModuleUITests.swift */; };
+		C11858A01E8BB631006B034E /* ConnectionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C118589F1E8BB631006B034E /* ConnectionFile.swift */; };
+		C1E63C091FF27C180075D504 /* WebServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E63C081FF27C180075D504 /* WebServiceHelper.swift */; };
+		C1E63C0C1FF280600075D504 /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E63C0B1FF280600075D504 /* ModelClass.swift */; };
+		C1E63C0E1FF283640075D504 /* JsonEncodedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E63C0D1FF283640075D504 /* JsonEncodedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,11 @@
 		C118588B1E8BB56F006B034E /* ConnectionModuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectionModuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C118588F1E8BB56F006B034E /* ConnectionModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionModuleUITests.swift; sourceTree = "<group>"; };
 		C11858911E8BB56F006B034E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C118589F1E8BB631006B034E /* ConnectionFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionFile.swift; sourceTree = "<group>"; };
+		C12365591FF37676002FFC4A /* ConnectionModule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConnectionModule.entitlements; sourceTree = "<group>"; };
+		C1E63C081FF27C180075D504 /* WebServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHelper.swift; sourceTree = "<group>"; };
+		C1E63C0B1FF280600075D504 /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
+		C1E63C0D1FF283640075D504 /* JsonEncodedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonEncodedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +106,15 @@
 		C118586E1E8BB56F006B034E /* ConnectionModule */ = {
 			isa = PBXGroup;
 			children = (
+				C12365591FF37676002FFC4A /* ConnectionModule.entitlements */,
+				C1E63C0A1FF280350075D504 /* Connectiomodule */,
 				C118586F1E8BB56F006B034E /* AppDelegate.swift */,
 				C11858711E8BB56F006B034E /* ViewController.swift */,
 				C11858731E8BB56F006B034E /* Main.storyboard */,
 				C11858761E8BB56F006B034E /* Assets.xcassets */,
 				C11858781E8BB56F006B034E /* LaunchScreen.storyboard */,
 				C118587B1E8BB56F006B034E /* Info.plist */,
+				C118589F1E8BB631006B034E /* ConnectionFile.swift */,
 			);
 			path = ConnectionModule;
 			sourceTree = "<group>";
@@ -123,6 +135,16 @@
 				C11858911E8BB56F006B034E /* Info.plist */,
 			);
 			path = ConnectionModuleUITests;
+			sourceTree = "<group>";
+		};
+		C1E63C0A1FF280350075D504 /* Connectiomodule */ = {
+			isa = PBXGroup;
+			children = (
+				C1E63C081FF27C180075D504 /* WebServiceHelper.swift */,
+				C1E63C0B1FF280600075D504 /* ModelClass.swift */,
+				C1E63C0D1FF283640075D504 /* JsonEncodedViewController.swift */,
+			);
+			path = Connectiomodule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +215,16 @@
 				TargetAttributes = {
 					C118586B1E8BB56F006B034E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 823P69D7TF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					C118587F1E8BB56F006B034E = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -259,8 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E63C0C1FF280600075D504 /* ModelClass.swift in Sources */,
+				C1E63C091FF27C180075D504 /* WebServiceHelper.swift in Sources */,
 				C11858721E8BB56F006B034E /* ViewController.swift in Sources */,
 				C11858701E8BB56F006B034E /* AppDelegate.swift in Sources */,
+				C11858A01E8BB631006B034E /* ConnectionFile.swift in Sources */,
+				C1E63C0E1FF283640075D504 /* JsonEncodedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +447,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConnectionModule/ConnectionModule.entitlements;
+				DEVELOPMENT_TEAM = 823P69D7TF;
 				INFOPLIST_FILE = ConnectionModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.e2m.ConnectionModule;
@@ -424,6 +461,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConnectionModule/ConnectionModule.entitlements;
+				DEVELOPMENT_TEAM = 823P69D7TF;
 				INFOPLIST_FILE = ConnectionModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.e2m.ConnectionModule;
@@ -505,6 +544,7 @@
 				C11858961E8BB56F006B034E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C11858971E8BB56F006B034E /* Build configuration list for PBXNativeTarget "ConnectionModuleTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +553,7 @@
 				C11858991E8BB56F006B034E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C118589A1E8BB56F006B034E /* Build configuration list for PBXNativeTarget "ConnectionModuleUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +562,7 @@
 				C118589C1E8BB56F006B034E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
